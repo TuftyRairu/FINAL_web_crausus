@@ -1,0 +1,601 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #61481C;
+  padding: 3vh 0;
+}
+.navbar .logo {
+  margin-left: 2.5vw;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+}
+.navbar .logo a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: #E6B325;
+  cursor: default;
+}
+.navbar .logo a h1, .navbar .logo a h2 {
+  cursor: pointer;
+}
+.navbar .logo a h2 {
+  font-size: 2em;
+}
+.navbar .logo a h1 {
+  font-size: 2.5em;
+}
+.navbar .logo a:hover {
+  color: #473311;
+  text-shadow: -1px -1px 0 #E6B325, 1px -1px 0 #E6B325, -1px 1px 0 #E6B325, 1px 1px 0 #E6B325;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 5vw;
+}
+.navbar ul li {
+  display: inline;
+  list-style-type: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #E6B325;
+  font-weight: bolder;
+}
+.navbar ul .home:hover {
+  padding-bottom: 2px;
+  border-bottom: #E6B325 2px solid;
+}
+.navbar ul .login {
+  padding: 0.5em 1em;
+  background-color: #E6B325;
+  border: solid 1px #473311;
+  border-radius: 20px 0 0 20px;
+}
+.navbar ul .login a {
+  color: #473311;
+}
+.navbar ul .login:hover {
+  cursor: pointer;
+  background-color: #473311;
+  border: 1px solid #E6B325;
+}
+.navbar ul .login:hover a {
+  color: #E6B325;
+}
+.navbar ul .signup {
+  padding: 0.5em 1em;
+  background-color: #E6B325;
+  border: solid 1px #473311;
+  border-radius: 0 20px 20px 0;
+}
+.navbar ul .signup a {
+  color: #473311;
+}
+.navbar ul .signup:hover {
+  cursor: pointer;
+  background-color: #473311;
+  border: 1px solid #E6B325;
+}
+.navbar ul .signup:hover a {
+  color: #E6B325;
+}
+.navbar ul .llogin {
+  padding: 0.5em 1em;
+  background-color: #473311;
+  border: solid 1px #E6B325;
+  border-radius: 20px 0 0 20px;
+}
+.navbar ul .llogin a {
+  color: #E6B325;
+}
+.navbar ul .lsignup {
+  padding: 0.5em 1em;
+  background-color: #E6B325;
+  border: solid 1px #473311;
+  border-radius: 0 20px 20px 0;
+}
+.navbar ul .lsignup a {
+  color: #473311;
+}
+.navbar ul .lsignup:hover {
+  cursor: pointer;
+  background-color: #473311;
+  border: 1px solid #E6B325;
+}
+.navbar ul .lsignup:hover a {
+  color: #E6B325;
+}
+.navbar ul .slogin {
+  padding: 0.5em 1em;
+  background-color: #E6B325;
+  border: solid 1px #473311;
+  border-radius: 20px 0 0 20px;
+}
+.navbar ul .slogin a {
+  color: #473311;
+}
+.navbar ul .slogin:hover {
+  cursor: pointer;
+  background-color: #473311;
+  border: 1px solid #E6B325;
+}
+.navbar ul .slogin:hover a {
+  color: #E6B325;
+}
+.navbar ul .ssignup {
+  padding: 0.5em 1em;
+  background-color: #473311;
+  border: solid 1px #E6B325;
+  border-radius: 0 20px 20px 0;
+}
+.navbar ul .ssignup a {
+  color: #E6B325;
+}
+.navbar ul .membermain {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+.navbar ul .membermain button {
+  background-color: #E6B325;
+  border: solid 1px #473311;
+  color: #473311;
+  border-radius: 20px 20px 20px 20px;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.navbar ul .membermain button:hover {
+  background-color: #473311;
+  color: #E6B325;
+  border-color: #E6B325;
+}
+.navbar ul .member-content {
+  display: none;
+  position: absolute;
+  margin: 0 0 0 3vw;
+  background-color: #E6B325;
+  border-radius: 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.navbar ul .member-content a {
+  color: #473311;
+  font-size: 1.2em;
+}
+.navbar ul .membermain:hover .member-content {
+  cursor: pointer;
+  display: block;
+}
+
+.banner {
+  height: 80vh;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  isolation: isolate;
+}
+.banner h1, .banner p, .banner h2 {
+  color: #291c05;
+}
+.banner .cent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.banner .cent h1 {
+  font-size: 4em;
+}
+.banner .cent h2 {
+  font-size: 3em;
+}
+.banner p {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #99722e;
+  opacity: 0.4;
+}
+
+.feedbacks {
+  height: 68vh;
+  background-color: #99722e;
+}
+
+.lbodycontent {
+  height: 73vh;
+  background-image: url("../images/loginbanner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  isolation: isolate;
+}
+.lbodycontent .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.lbodycontent .form .header {
+  background-color: #473311;
+  display: flex;
+  justify-content: center;
+  margin: 10vh 0 2.5vh 0;
+  border-radius: 15px;
+  width: 50%;
+}
+.lbodycontent .form .header h1 {
+  color: #E6B325;
+  margin: 1vh 0;
+}
+.lbodycontent .form .inputs {
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 0;
+}
+.lbodycontent .form .inputs label {
+  background-color: #473311;
+  color: #E6B325;
+  border-radius: 10px;
+  width: 13vw;
+  margin: 1vh 0;
+  padding: 0.7vh 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+.lbodycontent .form .inputs input {
+  margin: 1vh 0 1vh 3vw;
+  height: 4.5vh;
+  width: 20vw;
+  padding-left: 1vh;
+}
+.lbodycontent .form small {
+  height: 4vh;
+}
+.lbodycontent .form .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vh;
+}
+.lbodycontent .form .button .btn {
+  background-color: #E6B325;
+  color: #473311;
+  border: solid 1px #473311;
+  border-radius: 10px;
+  padding: 1.5vh 3vw;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.lbodycontent .form .button .btn:hover {
+  cursor: pointer;
+  background-color: #473311;
+  color: #E6B325;
+  border: #E6B325 solid 1px;
+}
+
+.lbodycontent::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #99722e;
+  opacity: 0.3;
+}
+
+.sbodycontent {
+  height: 73vh;
+  background-image: url("../images/signupbanner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  isolation: isolate;
+}
+.sbodycontent .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sbodycontent .form .header {
+  background-color: #473311;
+  display: flex;
+  justify-content: center;
+  margin: 4vh 0 2.5vh 0;
+  border-radius: 15px;
+  width: 50%;
+}
+.sbodycontent .form .header h1 {
+  color: #E6B325;
+  margin: 1vh 0;
+}
+.sbodycontent .form .inputs {
+  display: flex;
+  flex-direction: row;
+  padding: 1vh 0;
+}
+.sbodycontent .form .inputs label {
+  background-color: #473311;
+  color: #E6B325;
+  border-radius: 10px;
+  width: 13vw;
+  margin: 1vh 0;
+  padding: 0.7vh 0;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+.sbodycontent .form .inputs input {
+  margin: 1vh 0 1vh 3vw;
+  height: 4.5vh;
+  width: 20vw;
+  padding-left: 1vh;
+}
+.sbodycontent .form small {
+  height: 4vh;
+}
+.sbodycontent .form .button {
+  display: flex;
+  justify-content: center;
+  margin-top: 4vh;
+}
+.sbodycontent .form .button .btn {
+  background-color: #E6B325;
+  color: #473311;
+  border: solid 1px #473311;
+  border-radius: 10px;
+  padding: 1.5vh 3vw;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+.sbodycontent .form .button .btn:hover {
+  cursor: pointer;
+  background-color: #473311;
+  color: #E6B325;
+  border: #E6B325 solid 1px;
+}
+
+.sbodycontent::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: #99722e;
+  opacity: 0.4;
+}
+
+.footer {
+  width: 100%;
+  height: 13.5vh;
+  background-color: #61481C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer h1 {
+  font-size: 1.5em;
+  color: #E6B325;
+}
+
+@media (max-width: 645px) {
+  .banner .cent {
+    font-size: 0.9em;
+  }
+  .banner p {
+    font-size: 0.9em;
+    margin: 0 10vw;
+    text-align: center;
+  }
+  .navbar ul .ssignup a {
+    font-size: 0.9em;
+  }
+  .navbar ul .slogin a {
+    font-size: 0.9em;
+  }
+  .navbar ul .lsignup a {
+    font-size: 0.9em;
+  }
+  .navbar ul .llogin a {
+    font-size: 0.9em;
+  }
+  .navbar ul .signup a {
+    font-size: 0.9em;
+  }
+  .navbar ul .login a {
+    font-size: 0.9em;
+  }
+  .navbar .logo a {
+    font-size: 0.9em;
+  }
+  .navbar ul li a .home {
+    font-size: 0.9em;
+  }
+  .lbodycontent .form .header h1 {
+    font-size: 1.2em;
+  }
+  .lbodycontent .form .header {
+    margin-top: 10vh;
+    width: 70vw;
+  }
+  .lbodycontent .form .inputs label {
+    font-size: 0.8em;
+    padding-top: 1vh;
+    width: 20vw;
+  }
+  .lbodycontent .form .inputs input {
+    font-size: 0.7em;
+    width: 40vw;
+  }
+  .lbodycontent .form .button .btn {
+    font-size: 0.9em;
+    width: 50vw;
+  }
+  .lbodycontent .form .button {
+    margin-top: 2vh;
+  }
+  .footer h1 {
+    font-size: 1em;
+  }
+  .footer {
+    width: 100%;
+    height: 10vh;
+  }
+  .homebody {
+    margin-bottom: 4vh;
+  }
+  body {
+    background-color: #BF9742;
+  }
+}
+@media (max-width: 526px) {
+  .navbar ul .ssignup {
+    width: 75px;
+    padding: 0.5em 0.5em;
+  }
+  .navbar ul .slogin {
+    padding: 0.5em 0.5em;
+  }
+  .navbar ul .ssignup a {
+    font-size: 0.9em;
+  }
+  .navbar ul .slogin a {
+    font-size: 0.9em;
+  }
+  .navbar ul .lsignup {
+    width: 75px;
+    padding: 0.5em 0.5em;
+  }
+  .navbar ul .llogin {
+    padding: 0.5em 0.5em;
+  }
+  .navbar ul .lsignup a {
+    font-size: 0.9em;
+  }
+  .navbar ul .llogin a {
+    font-size: 0.9em;
+  }
+  .navbar ul .signup {
+    width: 75px;
+    padding: 0.5em 0.5em;
+  }
+  .navbar ul .login {
+    padding: 0.5em 0.5em;
+  }
+  .navbar ul .signup a {
+    font-size: 0.9em;
+  }
+  .navbar ul .login a {
+    font-size: 0.9em;
+  }
+  .navbar .logo a {
+    font-size: 0.9em;
+  }
+  .navbar ul li a .home {
+    font-size: 0.9em;
+  }
+  .navbar ul .home {
+    display: none;
+  }
+  .lbodycontent .form .header h1 {
+    font-size: 1.2em;
+  }
+  .lbodycontent .form .header {
+    margin-top: 9vh;
+    width: 80vw;
+  }
+  .lbodycontent .form .inputs label {
+    font-size: 0.7em;
+    width: 20vw;
+  }
+  .lbodycontent .form .inputs input {
+    font-size: 0.7em;
+    width: 50vw;
+  }
+  .lbodycontent .form .button .btn {
+    font-size: 0.9em;
+    width: 50vw;
+  }
+  .lbodycontent .form .button {
+    margin-top: 4vh;
+  }
+  .homebody {
+    margin-bottom: 5vh;
+  }
+}
+@media (max-width: 800px) {
+  .banner p {
+    margin: 0 5vw;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homebody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  color: red;
+  display: block;
+  text-align: left;
+}
+
+span {
+  padding: 5px 10px;
+}
+
+.success-message {
+  background-color: green;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.error-message {
+  background-color: red;
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+}
+
+.btn-member {
+  cursor: pointer;
+}
+
+.navbar ul .home {
+  margin-right: 10vw;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>ComfortEXP</title>
+</head>
+<body>
+    <div class="homebody">
+        <div class="navbar">
+            <div class="logo">
+                <a href="member.html">
+                    <h2>Comfort</h2>
+                    <h1>EXP</h1>
+                </a>
+            </div>
+            <ul>
+                <li><a href="member.html" style="margin-right: 10vw;padding-bottom: 2px;border-bottom: #E6B325 2px solid;" class="home">Home</a></li>
+                <li>
+                    <div class="membermain">
+                        <button id="account"></button>
+                        <div class="member-content">
+                            <button id="btn" class="btn-member">Logout</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="cent"><h2>Comfort</h2><h1>EXP</h1></div>
+            <p>"Experience the COMFORT that we will give to you with all the feelings afloat!"</p>
+        </div>
+        <div class="feedbacks">
+            <div class="firstimage">
+                <div class="image">
+
+                </div>
+                <div class="text">
+
+                </div>
+            </div>
+            <div class="secondimage">
+                <div class="image">
+
+                </div>
+                <div class="text">
+                    
+                </div>
+            </div>
+            <div class="thirdimage">
+                <div class="image">
+
+                </div>
+                <div class="text">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    const btn = document.getElementById("btn");
+    let u = localStorage.getItem('user');
+    let data = JSON.parse(u);
+
+    document.getElementById('account').textContent = data['username'];
+
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        console.log(window.location.replace('index.html'));
+    });
+</script>
+</html>

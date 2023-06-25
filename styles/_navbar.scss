@@ -1,0 +1,192 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #61481C;
+    padding: 3vh 0;
+
+    .logo {
+        margin-left: 2.5vw;
+        display: flex;
+        align-items: center;
+        padding: 0 2vw;
+        a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            color: #E6B325;
+            cursor: default;
+
+            h1, h2 {
+                cursor: pointer;
+            }
+            h2 {
+                font-size: 2em;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+        }
+        a:hover {
+            color: #473311;
+            text-shadow: -1px -1px 0 #E6B325, 1px -1px 0 #E6B325, -1px 1px 0 #E6B325, 1px 1px 0 #E6B325;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 5vw;
+
+        li {
+            display: inline;
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                font-size: 25px;
+                color: #E6B325;
+                font-weight:bolder;
+            }
+        }
+        .home:hover {
+            padding-bottom: 2px;
+            border-bottom: #E6B325 2px solid;
+        }
+        .login {
+            padding: 0.5em 1em;
+            background-color: #E6B325;
+            border: solid 1px #473311;
+            border-radius: 20px 0 0 20px;
+            
+            a {
+                color: #473311;
+            }
+        }
+        .login:hover {
+            cursor: pointer;
+            background-color: #473311;
+            border: 1px solid #E6B325;
+
+            a {
+                color: #E6B325;
+            }
+        }
+        .signup {
+            padding: 0.5em 1em;
+            background-color: #E6B325;
+            border: solid 1px #473311;
+            border-radius: 0 20px 20px 0;
+            a {
+                color: #473311;
+            }
+        }
+        .signup:hover {
+            cursor: pointer;
+            background-color: #473311;
+            border: 1px solid #E6B325;
+
+            a {
+                color: #E6B325;
+            }
+        }
+        .llogin {
+            padding: 0.5em 1em;
+            background-color: #473311;
+            border: solid 1px #E6B325;
+            border-radius: 20px 0 0 20px;
+            
+            a {
+                color: #E6B325;
+            }
+        }
+        .lsignup {
+            padding: 0.5em 1em;
+            background-color: #E6B325;
+            border: solid 1px #473311;
+            border-radius: 0 20px 20px 0;
+            
+            a {
+                color: #473311;
+            }
+        }
+        .lsignup:hover {
+            cursor: pointer;
+            background-color: #473311;
+            border: 1px solid #E6B325;
+        
+            a {
+                color: #E6B325;
+            }
+        }
+        .slogin {
+            padding: 0.5em 1em;
+            background-color: #E6B325;
+            border: solid 1px #473311;
+            border-radius: 20px 0 0 20px;
+            
+            a {
+                color: #473311;
+            }
+        }
+        .slogin:hover {
+            cursor: pointer;
+            background-color: #473311;
+            border: 1px solid #E6B325;
+
+            a {
+                color: #E6B325;
+            }
+        }
+        .ssignup {
+            padding: 0.5em 1em;
+            background-color: #473311;
+            border: solid 1px #E6B325;
+            border-radius: 0 20px 20px 0;
+            a {
+                color: #E6B325;
+            }
+        }
+        .membermain {
+            width: 100%;
+            position: relative;
+            display: inline-block;
+
+            button {
+                background-color: #E6B325;
+                border: solid 1px #473311;
+                color: #473311;
+                border-radius: 20px 20px 20px 20px;
+                padding: 0.5em 1em;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+
+            button:hover {
+                background-color: #473311;
+                color: #E6B325;
+                border-color: #E6B325;
+            }
+        }
+        .member-content {
+            display: none;
+            position: absolute;
+            margin: 0 0 0 3vw;
+            background-color: #E6B325;
+            border-radius: 20px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+
+            a {
+                color: #473311;
+                font-size: 1.2em;
+            }
+        }
+        .membermain:hover .member-content {
+            cursor: pointer;
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import 'navbar';
+@import 'bodycont';
+@import 'footer';
+@import 'responsive';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homebody {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color: red;
+    display: block;
+    text-align: left;
+}
+
+span {
+    padding: 5px 10px;
+}
+
+.success-message {
+    background-color: green;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.error-message {
+    background-color: red;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+}
+
+.btn-member {
+    cursor: pointer;
+}
+
+.navbar ul .home {
+    margin-right: 10vw
+}
